@@ -1,0 +1,15 @@
+{% extends "base.html" %} <!-- This line includes this html into the base template -->
+{% block content %} <!-- starting the block to insert into base.html -->
+<form method="post">
+    <h2>NEW POST</h2>
+    <h3>subject:</h3>
+    <input type="text" name="subject" value="{{subject}}"> <!-- name was food -->
+    <h2>BLOG</h2>
+    <textarea name="content">{{content}}</textarea>
+
+    <div><button>Submit</button></div>
+    <div class="error">{{error}}</div>
+</form>
+<hr>
+
+{% endblock %} <!-- ending the block that gets inserted into base.html-->
